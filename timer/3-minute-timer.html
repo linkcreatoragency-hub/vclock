@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Minute Timer — Online Countdown Timer with Alarm | VClock</title>
+<meta name="description" content="Free online 3 minute timer with alarm sound. Starts instantly in your browser — no sign-up or download. Pause, reset and pick your alarm tone.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://vclock.pro/timer/3-minute-timer">
+<meta name="theme-color" content="#4f46e5">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VClock">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="3 Minute Timer — Online Countdown Timer with Alarm | VClock">
+<meta property="og:description" content="Free online 3 minute timer with alarm sound. Starts instantly in your browser — no sign-up or download. Pause, reset and pick your alarm tone.">
+<meta property="og:url" content="https://vclock.pro/timer/3-minute-timer">
+<meta property="og:image" content="https://vclock.pro/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3 Minute Timer — Online Countdown Timer with Alarm | VClock">
+<meta name="twitter:description" content="Free online 3 minute timer with alarm sound. Starts instantly in your browser — no sign-up or download. Pause, reset and pick your alarm tone.">
+<meta name="twitter:image" content="https://vclock.pro/assets/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "3 Minute Timer", "url": "https://vclock.pro/timer/3-minute-timer", "applicationCategory": "UtilityApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "description": "Free online 3 minute timer that starts automatically and rings an alarm when time is up.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": "Auto-start countdown, 6 alarm sounds, pause and resume, background accurate"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this 3 minutes timer start automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The countdown begins the moment the page finishes loading, so you do not need to press anything. If you prefer to start it manually, press Reset and then Start."}}, {"@type": "Question", "name": "Will the alarm sound when the 3 minutes are up?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. VClock plays your chosen alarm sound, flashes the display and changes the browser tab title. Click anywhere on the page once so the browser allows audio."}}, {"@type": "Question", "name": "Can I pause this timer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press Pause at any point to hold the remaining time exactly where it is, then Resume to continue or Reset to start the 3 minutes again from the beginning."}}, {"@type": "Question", "name": "Does it keep counting if I switch to another tab?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The remaining time is calculated from the real clock rather than a tick counter, so background throttling cannot make it drift."}}, {"@type": "Question", "name": "Can I change the duration?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press Reset and type any hours, minutes and seconds you like, or pick a different length from the <a href='/timer'>main timer page</a>."}}, {"@type": "Question", "name": "Is this timer free?", "acceptedAnswer": {"@type": "Answer", "text": "Completely. There is no sign-up, no download, no advertisement wall and no limit on how many times you use it."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vclock.pro/"}, {"@type": "ListItem", "position": 2, "name": "Timer", "item": "https://vclock.pro/timer"}, {"@type": "ListItem", "position": 3, "name": "3 Minute Timer", "item": "https://vclock.pro/timer/3-minute-timer"}]}</script>
+</head>
+<body><header>
+<div class="container nav">
+<a class="logo" href="/" aria-label="VClock home"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#4f46e5"/><path d="M16 8v8l5.5 3.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="wm">V<em>Clock</em></span></a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu"><svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+<ul class="nav-links" id="navLinks">
+<li><a href="/">Alarm Clock</a></li><li><a href="/timer" class="on">Timer</a></li><li><a href="/stopwatch">Stopwatch</a></li><li><a href="/world-clock">World Clock</a></li><li><a href="/countdown">Countdown</a></li><li><a href="/pomodoro">Pomodoro</a></li>
+<li><a href="/blog/">Blog</a></li>
+</ul>
+</div>
+</header><div class="container"><nav class="tool-tabs" aria-label="Clock tools"><a href="/"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Alarm Clock</a><a href="/timer" class="on"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Timer</a><a href="/stopwatch"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Stopwatch</a><a href="/world-clock"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.5-2.4 3.75-5.4 3.75-9S14.5 5.4 12 3m0 18c-2.5-2.4-3.75-5.4-3.75-9S9.5 5.4 12 3M3.6 9h16.8M3.6 15h16.8"/></svg>World Clock</a><a href="/countdown"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>Countdown</a><a href="/pomodoro"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Pomodoro</a></nav></div>
+<div class="container"><div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/timer">Timer</a> &rsaquo; <span>3 Minute Timer</span></div></div>
+<div class="page-head">
+<div class="container">
+<h1><em>3 Minute Timer</em> — Online Countdown</h1>
+<p>Three minutes is the egg-timer standard: the length of a soft-boiled egg, a boxing round and a pop song. The countdown starts as soon as this page loads.</p>
+</div>
+</div>
+
+<div class="container">
+<div class="stage" id="timerTool" data-seconds="180" data-autostart="1">
+  <svg class="progress-ring" width="126" height="126" viewBox="0 0 120 120" aria-hidden="true">
+<circle cx="60" cy="60" r="54" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="8"/>
+<circle id="tmRing" cx="60" cy="60" r="54" fill="none" stroke="#818cf8" stroke-width="8" stroke-linecap="round"
+        transform="rotate(-90 60 60)" style="transition:stroke-dashoffset .3s linear"/>
+</svg>
+  <div class="display" id="tmDisplay" style="margin-top:12px">--:--</div>
+  <div class="setter hidden" id="tmSetter" style="margin-top:22px">
+    <div class="field"><label for="tmH">Hours</label><input id="tmH" type="number" min="0" max="99" inputmode="numeric" value="00"></div>
+    <div class="field"><label for="tmM">Minutes</label><input id="tmM" type="number" min="0" max="59" inputmode="numeric" value="00"></div>
+    <div class="field"><label for="tmS">Seconds</label><input id="tmS" type="number" min="0" max="59" inputmode="numeric" value="00"></div>
+  </div>
+  <div class="opt-row"><label for="tmSound">Alarm sound</label><select id="tmSound"></select></div>
+  <div class="controls">
+    <button class="btn" id="tmStart" type="button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.65v12.7c0 .9.97 1.46 1.75 1.01l11-6.35a1.17 1.17 0 0 0 0-2.02l-11-6.35a1.17 1.17 0 0 0-1.75 1.01Z"/></svg><span class="lbl">Start</span></button>
+    <button class="btn ghost hidden" id="tmPause" type="button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5"/></svg><span class="lbl">Pause</span></button>
+    <button class="btn ghost hidden" id="tmReset" type="button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16.02 4.66v4.5h-4.5m-3.54 9.9v-4.5h4.5M4.6 9.16a7.5 7.5 0 0 1 12.4-2.8l3 2.8m-18 5.7 3 2.8a7.5 7.5 0 0 0 12.4-2.8"/></svg><span class="lbl">Reset</span></button>
+    <button class="btn danger hidden" id="tmStop" type="button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z"/></svg><span class="lbl">Stop Alarm</span></button>
+  </div>
+  <div class="stage-sub" id="tmStatus" style="margin-top:14px">Counting down 3 minutes — leave this tab open.</div>
+</div>
+</div>
+
+<section>
+<div class="container prose">
+<h2>About This 3 Minute Timer</h2>
+<p>Three minutes is the original egg timer duration and still the default in most kitchens. It is also the length of a standard boxing round, which is why it appears in so many training apps.</p>
+<h2>What People Use a 3 Minute Timer For</h2>
+<ul><li>Soft-boiled eggs with a runny yolk</li><li>Boxing and MMA training rounds</li><li>Steeping black tea to full strength without bitterness</li><li>Timed presentations, pitches and lightning talks</li><li>Short mindfulness or breathing sessions</li><li>Letting a French press brew before plunging</li></ul>
+<h2>How to Use It</h2>
+<p>The timer above is already running. When it reaches zero, VClock plays an alarm sound, flashes the display and updates the browser tab title so you notice even if you have switched to another window. Press <strong>Stop Alarm</strong> to silence it, or <strong>Reset</strong> to run the same 3 minutes again.</p>
+<p>You can change the alarm sound before or during the countdown — pick from Beep, Digital, Alarm Bell, Chime, Siren or Soft Wake. Selecting one plays a short preview so you can check it is loud enough for your room. If you need a different length, press Reset and enter any duration, or open the <a href="/timer">main timer page</a>.</p>
+<h2>Tips for Reliable Timing</h2>
+<ul>
+<li><strong>Click once on the page.</strong> Browsers block audio until you interact, so a single click guarantees the alarm will be audible.</li>
+<li><strong>Bookmark this page.</strong> It becomes a one-click 3 minutes timer you can reach any time.</li>
+<li><strong>Keep the tab open.</strong> Closing it stops the countdown; switching tabs does not.</li>
+<li><strong>Check your volume.</strong> Both device volume and per-tab mute settings affect whether you hear the alarm.</li>
+</ul>
+<h2>Other Timer Lengths</h2>
+<div class="link-grid"><a href="/timer/30-second-timer">30 Second Timer</a><a href="/timer/1-minute-timer">1 Minute Timer</a><a href="/timer/2-minute-timer">2 Minute Timer</a><a href="/timer/4-minute-timer">4 Minute Timer</a><a href="/timer/5-minute-timer">5 Minute Timer</a><a href="/timer/7-minute-timer">7 Minute Timer</a><a href="/timer/10-minute-timer">10 Minute Timer</a><a href="/timer/12-minute-timer">12 Minute Timer</a><a href="/timer/15-minute-timer">15 Minute Timer</a><a href="/timer/20-minute-timer">20 Minute Timer</a><a href="/timer/25-minute-timer">25 Minute Timer</a><a href="/timer/30-minute-timer">30 Minute Timer</a><a href="/timer/40-minute-timer">40 Minute Timer</a><a href="/timer/45-minute-timer">45 Minute Timer</a><a href="/timer/50-minute-timer">50 Minute Timer</a><a href="/timer/1-hour-timer">1 Hour Timer</a><a href="/timer/90-minute-timer">90 Minute Timer</a><a href="/timer/2-hour-timer">2 Hour Timer</a></div>
+</div>
+</section>
+
+<section class="alt"><div class="container">
+<h2 class="sec-title">3 Minute Timer FAQ</h2>
+
+<div class="faq"><details open><summary>Does this 3 minutes timer start automatically?</summary><p>Yes. The countdown begins the moment the page finishes loading, so you do not need to press anything. If you prefer to start it manually, press Reset and then Start.</p></details>
+<details><summary>Will the alarm sound when the 3 minutes are up?</summary><p>Yes. VClock plays your chosen alarm sound, flashes the display and changes the browser tab title. Click anywhere on the page once so the browser allows audio.</p></details>
+<details><summary>Can I pause this timer?</summary><p>Yes. Press Pause at any point to hold the remaining time exactly where it is, then Resume to continue or Reset to start the 3 minutes again from the beginning.</p></details>
+<details><summary>Does it keep counting if I switch to another tab?</summary><p>Yes. The remaining time is calculated from the real clock rather than a tick counter, so background throttling cannot make it drift.</p></details>
+<details><summary>Can I change the duration?</summary><p>Yes. Press Reset and type any hours, minutes and seconds you like, or pick a different length from the <a href='/timer'>main timer page</a>.</p></details>
+<details><summary>Is this timer free?</summary><p>Completely. There is no sign-up, no download, no advertisement wall and no limit on how many times you use it.</p></details></div>
+</div></section>
+
+<section><div class="container"><div class="cta">
+<h2>Need to Wake Up at a Set Time?</h2><p>Switch to the VClock alarm clock to ring at a specific hour instead of counting down.</p><a class="btn" href="/">Open the Alarm Clock</a>
+</div></div></section>
+<footer>
+<div class="container">
+<div class="foot-grid">
+<div>
+<h4>VClock</h4>
+<p>VClock.pro is a free online clock suite — alarm clock, timer, stopwatch, world clock, countdown and Pomodoro timer. Everything runs right in your browser, with no sign-up, no download and no limits.</p>
+</div>
+<div>
+<h4>Clock Tools</h4>
+<ul>
+<li><a href="/">Online Alarm Clock</a></li>
+<li><a href="/timer">Online Timer</a></li>
+<li><a href="/stopwatch">Online Stopwatch</a></li>
+<li><a href="/world-clock">World Clock</a></li>
+<li><a href="/countdown">Countdown Timer</a></li>
+<li><a href="/pomodoro">Pomodoro Timer</a></li>
+</ul>
+</div>
+<div>
+<h4>Popular</h4>
+<ul>
+<li><a href="/timer/5-minute-timer">5 Minute Timer</a></li>
+<li><a href="/timer/10-minute-timer">10 Minute Timer</a></li>
+<li><a href="/timer/20-minute-timer">20 Minute Timer</a></li>
+<li><a href="/alarm/set-alarm-for-7-am">Set Alarm for 7 AM</a></li>
+<li><a href="/alarm/">All Alarm Times</a></li>
+</ul>
+</div>
+<div>
+<h4>Company</h4>
+<ul>
+<li><a href="/about">About Us</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">© 2026 VClock.pro — Free Online Alarm Clock, Timer &amp; Stopwatch. All rights reserved.</div>
+</div>
+</footer>
+<script src="/vclock.js" defer></script>
+</body>
+</html>
