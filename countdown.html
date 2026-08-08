@@ -105,6 +105,27 @@
 <li><strong>Use it as motivation.</strong> For goals — a race, a launch, an exam — a shrinking number is a surprisingly effective daily nudge.</li>
 </ul>
 
+<h2>Popular Things People Count Down To</h2>
+<p>Every countdown is personal, but the same handful of dates come up again and again. These are the ones worth setting up once and bookmarking:</p>
+<table>
+<thead><tr><th>Event</th><th>What people usually count</th><th>Set the time to</th></tr></thead>
+<tbody>
+<tr><td>New Year</td><td>Days, then hours, then the final sixty seconds</td><td>12:00 AM on January 1</td></tr>
+<tr><td>Christmas</td><td>Days remaining, checked daily through December</td><td>12:00 AM on December 25</td></tr>
+<tr><td>A birthday</td><td>Days until, often shared with the person</td><td>12:00 AM on the day</td></tr>
+<tr><td>A wedding</td><td>Weeks and days, for planning as much as excitement</td><td>The ceremony start time</td></tr>
+<tr><td>A holiday or flight</td><td>Days until departure, not until arrival</td><td>Check-in time, not take-off</td></tr>
+<tr><td>An exam or deadline</td><td>Days and hours, as a study pacing tool</td><td>The exact submission cut-off</td></tr>
+<tr><td>A product launch</td><td>Hours and minutes on the final day</td><td>The published go-live time</td></tr>
+<tr><td>Retirement or a graduation</td><td>Months and days, viewed occasionally</td><td>The date itself, midnight is fine</td></tr>
+</tbody>
+</table>
+<p>For deadlines in particular, set the countdown to the real cut-off rather than a comfortable round number. A countdown that ends at 11:59 PM when the true deadline is 5:00 PM is worse than no countdown at all.</p>
+
+<h2>How the Countdown Stays Accurate</h2>
+<p>VClock does not count ticks. It stores the target moment and, on every screen refresh, calculates the difference between that moment and your device's current time. This sounds like a small detail and it is the whole reason the number stays right: browsers deliberately throttle background tabs to save battery, so anything that counts by adding one second at a time drifts badly whenever you switch away. Because the countdown is recalculated rather than accumulated, you can leave the tab in the background for a week, come back, and the figure is exact.</p>
+<p>The same design handles daylight saving changes and a laptop that has been closed and reopened. Nothing is stored on a server and nothing is transmitted — the target date lives in your own browser, which also means the countdown keeps working with no internet connection once the page has loaded.</p>
+
 <h2>Why Countdowns Work Psychologically</h2>
 <p>Deadlines change behaviour. Work expands to fill the time available, and a vague future date offers no resistance to procrastination. A countdown makes the remaining time <em>visible and finite</em>, which converts an abstract deadline into something concrete enough to plan around. For positive events the same mechanism produces anticipation, which research on happiness consistently finds is a large part of the enjoyment of a holiday — often more than the trip itself.</p>
 </div>
